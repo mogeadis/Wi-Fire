@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include "utilities.h"
 #include "receiver.h"
 
@@ -7,7 +8,7 @@ void setup()
 {
     Serial.begin(9600);
     Serial.println("\n============================================================================================");
-    Serial.println("                                       Executing Program                                      ");
+    Serial.println("                                       EXECUTING PROGRAM                                      ");
     Serial.println("============================================================================================\n");
 
     initializeRX();

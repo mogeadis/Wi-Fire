@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include "utilities.h"
 #include "password.h"
 #include "transmitter.h"
@@ -8,7 +9,7 @@ void setup()
 {
     Serial.begin(9600);
     Serial.println("\n============================================================================================");
-    Serial.println("                                       Executing Program                                      ");
+    Serial.println("                                       EXECUTING PROGRAM                                      ");
     Serial.println("============================================================================================\n");
 
     lcd.init();
@@ -98,7 +99,7 @@ void loop()
                 {
                     for(byte channel = 1; channel <= CHANNELS_PER_NODE; channel++)
                     {
-                        byte current_channel = (node-1) + (channel-1) * NUM_OF_NODES;
+                        byte current_channel = (node - 1) + (channel - 1)*NUM_OF_NODES;
                         if(selected_channels[current_channel] == 1 && (!strcmp(status[levels[current_channel]],"SET") || !strcmp(status[levels[current_channel]],"ARM")))
                         {
                             num_of_eligible++;
@@ -120,7 +121,7 @@ void loop()
                     {
                         for(byte channel = 1; channel <= CHANNELS_PER_NODE; channel++)
                         {
-                            byte current_channel = (node-1) + (channel-1) * NUM_OF_NODES;
+                            byte current_channel = (node - 1) + (channel - 1)*NUM_OF_NODES;
                             if(selected_channels[current_channel] == 1 && !strcmp(status[levels[current_channel]],"ARM"))
                             {
                                 armChannels(node,channel);
@@ -136,7 +137,7 @@ void loop()
                 {
                     for(byte channel = 1; channel <= CHANNELS_PER_NODE; channel++)
                     {
-                        byte current_channel = (node-1) + (channel-1) * NUM_OF_NODES;
+                        byte current_channel = (node - 1) + (channel - 1)*NUM_OF_NODES;
                         if(selected_channels[current_channel] == 1 && !strcmp(status[levels[current_channel]],"ARM"))
                         {
                             fireChannels(node,channel);
@@ -190,7 +191,7 @@ void loop()
             {
                 for(byte channel = 1; channel <= CHANNELS_PER_NODE; channel++)
                 {
-                    byte current_channel = (node-1) + (channel-1) * NUM_OF_NODES;
+                    byte current_channel = (node - 1) + (channel - 1)*NUM_OF_NODES;
                     if(selected_channels[current_channel] == 1)
                     {
                         requestStatus(node,channel);

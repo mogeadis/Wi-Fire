@@ -16,7 +16,7 @@
 #define RESET false
 #define PASSWORD_LENGTH 4
 #define DEFAULT_PASSWORD "0000"
-extern char password[PASSWORD_LENGTH+1];
+extern char password[PASSWORD_LENGTH + 1];
 
 //////////////////////////////////////////////////
 

@@ -119,13 +119,13 @@ void lcdMsg(const char msg[],byte col,byte row,byte clear)
             break;
         }
     }
-    lcd.setCursor(col-1,row-1);
+    lcd.setCursor(col - 1,row - 1);
     lcd.print(msg);
 }
 
 void lcdCustom(byte character,byte col,byte row)
 {
-    lcd.setCursor(col-1,row-1);
+    lcd.setCursor(col - 1,row - 1);
     lcd.write(character);
 }
 
@@ -192,7 +192,7 @@ void printStatus()
     byte col,row;
     for(byte i = 0; i < NUM_OF_CHANNELS; i++)
     {
-        switch(i+1)
+        switch(i + 1)
         {
             case 1:
             {
@@ -231,15 +231,15 @@ void printStatus()
                 break;
             } 
         }
-        Serial.print(i+1);
+        Serial.print(i + 1);
         Serial.print(status[levels[i]]);
         Serial.print(" ");
-        lcd.setCursor(col-1,row-1);
-        lcd.print(i+1);
+        lcd.setCursor(col - 1,row - 1);
+        lcd.print(i + 1);
         lcd.print(status[levels[i]]);
         if(selected_channels[i] == 1)
         {
-            lcdCustom(i+1,col,row);
+            lcdCustom(i + 1,col,row);
         }
     }
     Serial.println('\n');

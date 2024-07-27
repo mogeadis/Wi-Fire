@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////
 
 // Define Variables
-char password[PASSWORD_LENGTH+1];
+char password[PASSWORD_LENGTH + 1];
 
 //////////////////////////////////////////////////
 
@@ -68,7 +68,7 @@ void printPassword(char password[],bool mask)
 
 void enterPassword()
 {
-    char input_password[PASSWORD_LENGTH+1] = {'\0'};
+    char input_password[PASSWORD_LENGTH + 1] = {'\0'};
     Serial.println("ENTER PASSWORD");
     lcdMsg("ENTER PASSWORD",2,1,1);
     printPassword(input_password);
@@ -123,7 +123,7 @@ void enterPassword()
 void updatePassword()
 {
     bool update = true;
-    char input_password[PASSWORD_LENGTH+1] = {'\0'};
+    char input_password[PASSWORD_LENGTH + 1] = {'\0'};
     Serial.println("OLD PASSWORD");
     lcdMsg("OLD PASSWORD",3,1,1);
     printPassword(input_password);

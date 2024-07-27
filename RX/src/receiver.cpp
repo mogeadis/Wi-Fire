@@ -53,7 +53,7 @@ bool receiveData()
             ack.id = packet.id;
             ack.node = packet.node;
             ack.channel = packet.channel;
-            strcpy(ack.message,status[levels[ack.channel-1]]);
+            strcpy(ack.message,status[levels[ack.channel - 1]]);
 
             radio.stopListening();
             radio.write(&ack,sizeof(ack),true);

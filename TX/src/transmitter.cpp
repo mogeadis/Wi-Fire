@@ -117,7 +117,7 @@ void requestStatus(byte node,byte channel)
     transmitData();
 
     byte current_channel;
-    current_channel = (node-1) + (channel-1) * NUM_OF_NODES;
+    current_channel = (node - 1) + (channel - 1) * NUM_OF_NODES;
     if(!strcmp(payload,"OFF"))
     {
         levels[current_channel] = 0;
@@ -149,7 +149,7 @@ void armChannels(byte node,byte channel)
     transmitData();
 
     byte current_channel;
-    current_channel = (node-1) + (channel-1) * NUM_OF_NODES;
+    current_channel = (node - 1) + (channel - 1) * NUM_OF_NODES;
     if(!strcmp(payload,"OFF"))
     {
         levels[current_channel] = 0;
@@ -177,7 +177,7 @@ void fireChannels(byte node,byte channel)
     transmitData();
 
     byte current_channel;
-    current_channel = (node-1) + (channel-1) * NUM_OF_NODES;
+    current_channel = (node - 1) + (channel - 1) * NUM_OF_NODES;
     if(!strcmp(payload,"OFF"))
     {
         levels[current_channel] = 0;
