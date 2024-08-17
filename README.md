@@ -13,7 +13,7 @@
 ## Description
 
 ### Project
-**Wi-Fire** consists of one transmitter unit equipped with an LCD screen and a 4x4 keypad, along with three receiver units, each featuring two firing channels. All units are operated by individual ATmega238P microcontrollers embedded in *Arduino Nano* boards and communicate over a one-to-many network of *nRF24L01+PA+LNA* modules.
+**Wi-Fire** consists of one transmitter unit equipped with an LCD screen and a 4x4 keypad, along with three receiver units, each featuring two firing channels. All units are operated by individual ATmega328P microcontrollers embedded in *Arduino Nano* boards and communicate over a one-to-many network of *nRF24L01+PA+LNA* modules.
 
 ### Repository
 The code in this repository is organized into two directories, namely [TX](TX) and [RX](RX), which contain the associated code files for the transmitter and the receiver units respectively. Each of these directories is further divided into three subdirectories, which separately include the header (`.h`) files, source (`.cpp`) files, and external libraries.
