@@ -1,7 +1,5 @@
 #include "utilities.h"
 
-//////////////////////////////////////////////////
-
 // Define Variables
 char key = 'C';
 char keys[KEYPAD_ROWS][KEYPAD_COLS] =
@@ -15,12 +13,9 @@ byte row_pins[KEYPAD_ROWS] = {8,7,4,3};
 byte col_pins[KEYPAD_COLS] = {A0,A1,A2,A3};
 Keypad keypad = Keypad(makeKeymap(keys),row_pins,col_pins,KEYPAD_ROWS,KEYPAD_COLS);
 LiquidCrystal_I2C lcd(LCD_ADDRESS,LCD_COLS,LCD_ROWS);
-
 byte levels[NUM_OF_CHANNELS] = {0};
 char status[5][4] = {"OFF","ONL","SET","ARM","PYR"};
-
 bool selected_channels[NUM_OF_CHANNELS] = {0};
-
 byte custom1[8] =
 {
 	0b00100,
@@ -88,8 +83,6 @@ byte custom6[8] =
 	0b11111
 };
 
-//////////////////////////////////////////////////
-
 // Define Functions
 void lcdMsg(const char msg[],byte col,byte row,byte clear)
 {
@@ -152,7 +145,6 @@ void indicateStatus()
             max_level = max(levels[i],max_level);
         }    
     }
-
     byte red_value;
     byte green_value;
     if(!strcmp(status[max_level],"OFF"))
@@ -180,7 +172,6 @@ void indicateStatus()
         red_value = getColorValue(0);
         green_value = getColorValue(50);
     }
-    
     analogWrite(RED_LED,red_value);
     analogWrite(GREEN_LED,green_value);
 }
@@ -244,5 +235,3 @@ void printStatus()
     }
     Serial.println('\n');
 }
-
-//////////////////////////////////////////////////

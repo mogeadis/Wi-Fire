@@ -3,15 +3,12 @@
 #include "password.h"
 #include "transmitter.h"
 
-//////////////////////////////////////////////////
-
 void setup()
 {
     Serial.begin(9600);
     Serial.println("\n============================================================================================");
     Serial.println("                                       EXECUTING PROGRAM                                      ");
     Serial.println("============================================================================================\n");
-
     lcd.init();
     lcd.clear();
     delay(500);
@@ -22,19 +19,15 @@ void setup()
     lcd.createChar(4,custom4);
     lcd.createChar(5,custom5);
     lcd.createChar(6,custom6);
-
     initializeTX();
     digitalWrite(RED_LED,HIGH);
     digitalWrite(GREEN_LED,HIGH);
     pinMode(RED_LED,OUTPUT);
     pinMode(GREEN_LED,OUTPUT);
-
     resetPassword();
     loadPassword();
     enterPassword();
 }
-
-//////////////////////////////////////////////////
 
 void loop()
 {
@@ -94,7 +87,6 @@ void loop()
             {
                 byte num_of_eligible = 0;
                 byte num_of_armed = 0;  
-
                 for(byte node = 1; node <= NUM_OF_NODES; node++)
                 {
                     for(byte channel = 1; channel <= CHANNELS_PER_NODE; channel++)
@@ -114,7 +106,6 @@ void loop()
                         }
                     } 
                 }
-
                 if(num_of_armed == num_of_eligible)
                 {
                     for(byte node = 1; node <= NUM_OF_NODES; node++)
@@ -176,7 +167,6 @@ void loop()
                 break;
             }
         }
-        
         if(selection != nullptr)
         {
             for(byte i = 0; i < NUM_OF_CHANNELS; i++)
@@ -199,13 +189,9 @@ void loop()
                 } 
             }
         }
-        
         printStatus();
         indicateStatus();
-
         key = '\0';
         delete[] selection;
     }
 }
-
-//////////////////////////////////////////////////

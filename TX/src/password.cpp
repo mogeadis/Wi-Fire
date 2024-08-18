@@ -1,11 +1,7 @@
 #include "password.h"
 
-//////////////////////////////////////////////////
-
 // Define Variables
 char password[PASSWORD_LENGTH + 1];
-
-//////////////////////////////////////////////////
 
 // Define Functions
 void resetPassword()
@@ -72,7 +68,6 @@ void enterPassword()
     Serial.println("ENTER PASSWORD");
     lcdMsg("ENTER PASSWORD",2,1,1);
     printPassword(input_password);
-
     while(true)
     {
         char key = keypad.getKey();
@@ -127,7 +122,6 @@ void updatePassword()
     Serial.println("OLD PASSWORD");
     lcdMsg("OLD PASSWORD",3,1,1);
     printPassword(input_password);
-
     while(update)
     {
         char key = keypad.getKey();
@@ -180,7 +174,6 @@ void updatePassword()
             }
         }
     }
-
     strcpy(input_password,"");
     while(update)
     {
@@ -228,5 +221,3 @@ void updatePassword()
     }
     return;
 }
-
-//////////////////////////////////////////////////

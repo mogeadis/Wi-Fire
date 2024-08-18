@@ -2,33 +2,25 @@
 #include "utilities.h"
 #include "receiver.h"
 
-//////////////////////////////////////////////////
-
 void setup()
 {
     Serial.begin(9600);
     Serial.println("\n============================================================================================");
     Serial.println("                                       EXECUTING PROGRAM                                      ");
     Serial.println("============================================================================================\n");
-
     initializeRX();
     for(byte i = 0; i < NUM_OF_CHANNELS; i++)
     {
         levels[i] = 1;
         pinMode(LDR_PINS[i],INPUT);
-
         digitalWrite(RED_PINS[i],HIGH);
         pinMode(RED_PINS[i],OUTPUT);
-
         digitalWrite(GREEN_PINS[i],HIGH);
         pinMode(GREEN_PINS[i],OUTPUT);
-
         digitalWrite(TRIGGER_PINS[i],LOW);
         pinMode(TRIGGER_PINS[i],OUTPUT);
     }
 }
-
-//////////////////////////////////////////////////
 
 void loop()
 {
@@ -55,9 +47,7 @@ void loop()
             }
         }
     }
-
     indicateStatus();
-
     for(byte i = 0; i < NUM_OF_CHANNELS; i++)
     {
         int ldr_value = analogRead(LDR_PINS[i]);
@@ -94,5 +84,3 @@ void loop()
         }
     }
 }
-
-//////////////////////////////////////////////////

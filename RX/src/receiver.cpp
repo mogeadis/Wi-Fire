@@ -1,17 +1,12 @@
 #include "receiver.h"
 
-//////////////////////////////////////////////////
-
 // Define Variables
 RF24 radio(CE_PIN, CSN_PIN);
 const byte tx_address[ADDRESS_WIDTH + 1] = "TX0";
 const byte rx_address[ADDRESS_WIDTH + 1] = "RX0";
-
 Data packet;
 Data ack;
 unsigned int last_id = 0;
-
-//////////////////////////////////////////////////
 
 // Define Functions
 void initializeRX()
@@ -76,5 +71,3 @@ bool receiveData()
     }
     return new_data;
 }
-
-//////////////////////////////////////////////////

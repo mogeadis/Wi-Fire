@@ -1,19 +1,13 @@
 #include "utilities.h"
 
-//////////////////////////////////////////////////
-
 // Define Variables
 byte LDR_PINS[NUM_OF_CHANNELS] = {A1,A2};
 byte RED_PINS[NUM_OF_CHANNELS] = {3,6};
 byte GREEN_PINS[NUM_OF_CHANNELS] = {5,9};
 byte TRIGGER_PINS[NUM_OF_CHANNELS] = {2,7};
-
 byte levels[NUM_OF_CHANNELS] = {0};
 char status[5][4] = {"OFF","ONL","SET","ARM","PYR"};
-
 unsigned long timer[NUM_OF_CHANNELS] = {0};
-
-//////////////////////////////////////////////////
 
 // Define Functions
 byte getColorValue(byte ratio)
@@ -58,5 +52,3 @@ void indicateStatus()
         analogWrite(GREEN_PINS[i],green_value);
     }
 }
-
-//////////////////////////////////////////////////

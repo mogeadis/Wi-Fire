@@ -1,17 +1,12 @@
 #include "transmitter.h"
 
-//////////////////////////////////////////////////
-
 // Define Variables
 RF24 radio(CE_PIN,CSN_PIN);
 const byte tx_address[ADDRESS_WIDTH + 1] = "TX0";
 const byte rx_address[ADDRESS_WIDTH + 1] = "RX0";
-
 Data packet;
 Data ack;
 char payload[MSG_SIZE + 1] = "OFF";
-
-//////////////////////////////////////////////////
 
 // Define Functions
 void initializeTX()
@@ -49,13 +44,11 @@ bool transmitData()
     char result[8];
     unsigned long msg_t0, msg_t1, msg_dt;
     unsigned long ack_t0, ack_t1, ack_dt;
-
     ack_dt = 0;
     retries = 0;
     success = false;
     strcpy(payload,"OFF");
     strcpy(result,"Failure");
-
     msg_t0 = micros();
     radio.stopListening();
     radio.write(&packet,sizeof(packet),true);
@@ -85,7 +78,6 @@ bool transmitData()
     }
     msg_t1 = micros();
     msg_dt = msg_t1 - msg_t0;
-
     Serial.print("Sent Packet: #");
     Serial.print(packet.id);
     Serial.print(" <");
@@ -104,7 +96,6 @@ bool transmitData()
     Serial.print(payload);
     Serial.print(">");
     Serial.println();
-
     return success;
 }
 
@@ -115,7 +106,6 @@ void requestStatus(byte node,byte channel)
     packet.channel = channel;
     strcpy(packet.message,"REQ");
     transmitData();
-
     byte current_channel;
     current_channel = (node - 1) + (channel - 1) * NUM_OF_NODES;
     if(!strcmp(payload,"OFF"))
@@ -147,7 +137,6 @@ void armChannels(byte node,byte channel)
     packet.channel = channel;
     strcpy(packet.message,"ARM");
     transmitData();
-
     byte current_channel;
     current_channel = (node - 1) + (channel - 1) * NUM_OF_NODES;
     if(!strcmp(payload,"OFF"))
@@ -175,7 +164,6 @@ void fireChannels(byte node,byte channel)
     packet.channel = channel;
     strcpy(packet.message,"PYR");
     transmitData();
-
     byte current_channel;
     current_channel = (node - 1) + (channel - 1) * NUM_OF_NODES;
     if(!strcmp(payload,"OFF"))
@@ -195,5 +183,3 @@ void fireChannels(byte node,byte channel)
         levels[current_channel] = 4;
     }
 }
-
-//////////////////////////////////////////////////
