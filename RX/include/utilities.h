@@ -1,3 +1,13 @@
+/**************************************************************************************************
+Filename: utilities.h
+
+Description: This header file sets up various functionalities of the receiver units
+
+Author: Alexandros Iliadis
+Project: Wi-Fire (RX)
+Date: July 2023
+**************************************************************************************************/
+
 #ifndef UTILITIES_H
 #define UTILITIES_H
 

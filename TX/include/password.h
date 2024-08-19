@@ -1,3 +1,13 @@
+/**************************************************************************************************
+Filename: transmitter.h
+
+Description: This header file sets up the password protection of the transmitter unit
+
+Author: Alexandros Iliadis
+Project: Wi-Fire (TX)
+Date: July 2023
+**************************************************************************************************/
+
 #ifndef PASSWORD_H
 #define PASSWORD_H
 

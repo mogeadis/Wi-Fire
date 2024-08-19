@@ -1,7 +1,17 @@
+/**************************************************************************************************
+Filename: main.cpp
+
+Description: This source file sets up the core functionality of the transmitter unit
+
+Author: Alexandros Iliadis
+Project: Wi-Fire (TX)
+Date: July 2023
+**************************************************************************************************/
+
 #include <Arduino.h>
 #include "utilities.h"
-#include "password.h"
 #include "transmitter.h"
+#include "password.h"
 
 void setup()
 {

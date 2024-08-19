@@ -1,3 +1,13 @@
+/**************************************************************************************************
+Filename: receiver.cpp
+
+Description: This source file defines the components declared in the corresponding header file
+
+Author: Alexandros Iliadis
+Project: Wi-Fire (RX)
+Date: July 2023
+**************************************************************************************************/
+
 #include "receiver.h"
 
 // Define Variables

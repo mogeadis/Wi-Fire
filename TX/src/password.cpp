@@ -1,3 +1,13 @@
+/**************************************************************************************************
+Filename: password.cpp
+
+Description: This source file defines the components declared in the corresponding header file
+
+Author: Alexandros Iliadis
+Project: Wi-Fire (TX)
+Date: July 2023
+**************************************************************************************************/
+
 #include "password.h"
 
 // Define Variables

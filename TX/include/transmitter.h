@@ -1,3 +1,13 @@
+/**************************************************************************************************
+Filename: transmitter.h
+
+Description: This header file sets up the wireless communication of the transmitter unit
+
+Author: Alexandros Iliadis
+Project: Wi-Fire (TX)
+Date: July 2023
+**************************************************************************************************/
+
 #ifndef TRANSMITTER_H
 #define TRANSMITTER_H
 

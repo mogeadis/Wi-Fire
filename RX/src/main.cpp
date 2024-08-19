@@ -1,3 +1,13 @@
+/**************************************************************************************************
+Filename: main.cpp
+
+Description: This source file sets up the core functionality of the receiver units
+
+Author: Alexandros Iliadis
+Project: Wi-Fire (RX)
+Date: July 2023
+**************************************************************************************************/
+
 #include <Arduino.h>
 #include "utilities.h"
 #include "receiver.h"

@@ -1,3 +1,13 @@
+/**************************************************************************************************
+Filename: receiver.h
+
+Description: This header file sets up the wireless communication of the receiver units
+
+Author: Alexandros Iliadis
+Project: Wi-Fire (RX)
+Date: July 2023
+**************************************************************************************************/
+
 #ifndef RECEIVER_H
 #define RECEIVER_H
 
