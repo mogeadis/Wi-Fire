@@ -19,7 +19,7 @@
 The code in this repository is organized into two directories, namely [TX](TX) and [RX](RX), which contain the associated code files for the transmitter and the receiver units respectively. Each of these directories is further divided into three subdirectories, which separately include the header (`.h`) files, source (`.cpp`) files, and external libraries.
 
 ### Technical Details
-This project was developed using *Visual Studio Code* on `Windows 10`, with the *PlatformIO* extension employed to upload the code to the *Arduino* boards. Since this was intended as a one-off project for personal use, no further documentation (e.g. circuit diagrams) was assembled.
+This project was developed using *Visual Studio Code* on `Windows 10`, with the *PlatformIO* extension employed to upload the code to the microcontrollers. Since this was intended as a one-off project for personal use, no further documentation (e.g. circuit diagrams) was assembled.
 
 
 ## License
