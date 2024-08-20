@@ -5,7 +5,7 @@ Description: This header file sets up the wireless communication of the transmit
 
 Author: Alexandros Iliadis
 Project: Wi-Fire (TX)
-Date: July 2023
+Date: September 2023
 **************************************************************************************************/
 
 #ifndef TRANSMITTER_H

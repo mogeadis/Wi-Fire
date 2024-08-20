@@ -5,7 +5,7 @@ Description: This source file defines the components declared in the correspondi
 
 Author: Alexandros Iliadis
 Project: Wi-Fire (TX)
-Date: July 2023
+Date: September 2023
 **************************************************************************************************/
 
 #include "transmitter.h"

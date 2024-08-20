@@ -5,7 +5,7 @@ Description: This source file sets up the core functionality of the transmitter 
 
 Author: Alexandros Iliadis
 Project: Wi-Fire (TX)
-Date: July 2023
+Date: September 2023
 **************************************************************************************************/
 
 #include <Arduino.h>

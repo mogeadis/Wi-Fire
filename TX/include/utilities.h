@@ -5,7 +5,7 @@ Description: This header file sets up various functionalities of the transmitter
 
 Author: Alexandros Iliadis
 Project: Wi-Fire (TX)
-Date: July 2023
+Date: September 2023
 **************************************************************************************************/
 
 #ifndef UTILITIES_H
