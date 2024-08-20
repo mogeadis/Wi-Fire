@@ -28,4 +28,4 @@ This project was developed using *Visual Studio Code* on `Windows 10`, with the 
 
 Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.
 
-See the [LICENSE.md](LICENSE.md) file for more details.
+See the [`LICENSE.md`](LICENSE.md) file for more details.
