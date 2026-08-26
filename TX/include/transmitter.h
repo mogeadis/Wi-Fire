@@ -3,7 +3,7 @@ Filename: transmitter.h
 
 Description: This header file sets up the wireless communication of the transmitter unit
 
-Author: Alexandros Iliadis
+Author: Alexandros Iliadis (https://github.com/mogeadis)
 Project: Wi-Fire (TX)
 Date: September 2023
 **************************************************************************************************/

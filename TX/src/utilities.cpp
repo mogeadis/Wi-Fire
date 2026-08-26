@@ -3,7 +3,7 @@ Filename: utilities.cpp
 
 Description: This source file defines the components declared in the corresponding header file
 
-Author: Alexandros Iliadis
+Author: Alexandros Iliadis (https://github.com/mogeadis)
 Project: Wi-Fire (TX)
 Date: September 2023
 **************************************************************************************************/

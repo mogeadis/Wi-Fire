@@ -3,7 +3,7 @@ Filename: receiver.h
 
 Description: This header file sets up the wireless communication of the receiver units
 
-Author: Alexandros Iliadis
+Author: Alexandros Iliadis (https://github.com/mogeadis)
 Project: Wi-Fire (RX)
 Date: September 2023
 **************************************************************************************************/
