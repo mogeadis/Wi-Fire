@@ -4,7 +4,7 @@ Filename: utilities.h
 Description: This header file sets up various functionalities of the transmitter unit
 
 Author: Alexandros Iliadis (https://github.com/mogeadis)
-Project: Wi-Fire (TX)
+Project: Wi-Fire (Transmitter)
 Date: September 2023
 **************************************************************************************************/
 

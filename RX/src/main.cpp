@@ -4,7 +4,7 @@ Filename: main.cpp
 Description: This source file sets up the core functionality of the receiver units
 
 Author: Alexandros Iliadis (https://github.com/mogeadis)
-Project: Wi-Fire (RX)
+Project: Wi-Fire (Receiver)
 Date: September 2023
 **************************************************************************************************/
 

@@ -4,7 +4,7 @@ Filename: main.cpp
 Description: This source file sets up the core functionality of the transmitter unit
 
 Author: Alexandros Iliadis (https://github.com/mogeadis)
-Project: Wi-Fire (TX)
+Project: Wi-Fire (Transmitter)
 Date: September 2023
 **************************************************************************************************/
 
